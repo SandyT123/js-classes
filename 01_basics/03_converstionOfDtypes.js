@@ -1,6 +1,6 @@
 //conversion of datatypes
 
-let score = "3oooo3";
+let score = "33aaaa";
 console.log(typeof score);
 console.log(typeof score);
 
@@ -26,3 +26,47 @@ console.log(boolenIsloggedIn);
 let someNumber = 33;
 let stringNumber = String(someNumber);
 console.log(typeof stringNumber);
+console.log(stringNumber);
+
+// ********************************************Operations*****************************************************
+
+console.log("**************");
+
+let value = 3;
+let negValue = -value;
+// console.log(negValue);
+
+// console.log(2 + 2);
+// console.log(2 * 2);
+// console.log(2 - 2);
+// console.log(2 ** 2);
+// console.log(2 ** 3);
+// console.log(2 / 3);
+// console.log(2 % 3);
+
+let str1 = "hello";
+let str2 = "sandeep";
+
+let str3 = str1 + str2;
+// console.log(str3);
+
+// console.log("1" + 2);
+// console.log(1 + "2");
+// console.log("1" + 2 + 3);
+// console.log(1 + 2 + "3");
+
+console.log(2 + (3 * 4) / 5); // Dont write the messi code or else use the parenthesis for that *Read doc
+
+console.log(true);
+console.log(+"");
+
+let num1, num2, num3;
+
+num1 = num2 = num3 = 2 + 2; // Dont use kind of this *Read doc
+
+let gameCounter = 100;
+gameCounter++; // pre and post increment differ *Read doc
+console.log(gameCounter);
+
+//Link to study
+//https://tc39.es/ecma262/multipage/abstract-operations.html#sec-type-conversion

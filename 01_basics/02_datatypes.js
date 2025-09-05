@@ -17,7 +17,7 @@ let isLoggedIn = true;
 //string => "sandeep"
 //boolean=> true or false
 //null => standalone value or empty value
-//undefiened
+//undefiened => undefined
 
 //bigInt
 let num = 3n ** 53n; // for this line if u want to get the value u have to add 'n' at the end  or else below method
@@ -35,7 +35,7 @@ let names = Symbol("names");
 let std = {
   age: 23,
   gender: "male",
-  //   [names]: "sandeeppatil",
+  // [names]: "sandeeppatil",
 };
 std[names] = "sandypatil";
 // console.log(std);
@@ -44,11 +44,11 @@ std[names] = "sandypatil";
 //   console.log(key);
 // }
 
-// console.log(JSON.stringify(std));
+console.log(JSON.stringify(std));
 // for the loop and json format the hidden value cant visible if u want to see make it string
 
-console.log(typeof name);
-console.log(typeof age);
-console.log(typeof isLoggedIn);
-console.log(typeof null);
-console.log(typeof undefined);
+// console.log(typeof name);
+// console.log(typeof age);
+// console.log(typeof isLoggedIn);
+// console.log(typeof null);
+// console.log(typeof undefined);

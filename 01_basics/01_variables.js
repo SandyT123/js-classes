@@ -7,10 +7,10 @@ let accountState;
 
 // accountId = 2 not allowed
 accountEmail = "sdfghjk@jj.com";
-accountPassword = "212121";
+accountPassword = 212121;
 accountCity = "banglore";
 
-// console.log(accountId);
+// console.log(accountState);
 console.table([
   accountId,
   accountEmail,
@@ -19,4 +19,4 @@ console.table([
   accountState,
 ]);
 
-//prefer not use to var becz of issue in block scope in functional scopess
+//prefer not use to (var) becz of issue in block scope in functional scope

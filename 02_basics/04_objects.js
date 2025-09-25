@@ -71,3 +71,25 @@ console.log(Object.entries(tinderUser));
 
 console.log(tinderUser.hasOwnProperty('isLoggedIn'));
 
+
+const course = {
+    name:"js in hindi",
+    price :1000,
+    courseInstructor:"sandeep"
+}
+// course.courseInstructor
+
+//obj destructuring
+const { courseInstructor : instructor } = course;
+console.log(instructor);
+
+/// Api concepts - api call
+// Below given code is piece of Json not object but similar to obj
+// some time api response should be in json form or object form You need to make arrangement using json formatter
+
+// {
+//     "name" : "sandeep",
+//     "courseName" : "js in hindi",
+//     "price" : "free"
+// }
+

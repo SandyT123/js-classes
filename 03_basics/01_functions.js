@@ -44,8 +44,36 @@ function loginUser (userName = "sandy"){ // If nothing is passed then u can set 
 // console.log(loginUser("sandeep"));
 // console.log(loginUser(""));
 // console.log(loginUser()); //if value doesnt exist then it will be undefined/
-console.log(loginUser("maga"));
- 
+// console.log(loginUser("maga"));
 
+function calculateCartPrice(val1, val2, ...num1){ 
+    //return array with Rest of values called restoperator
+     return num1 //return only num val
+}
+console.log(calculateCartPrice(200, 300, 400,3000));
+ 
+// pass the object in function
+const user = {
+    userName : "sandeep",
+    price : 199
+}
+
+function handleObject (anyObject){
+  console.log(`username is ${anyObject.userName} and price is ${anyObject.price}`);
+} 
+
+// handleObject(user)
+handleObject(
+    {userName:"sam",price:399}
+)
+
+// Now passing of array
+const myNewArray = [200, 400, 100, 600];
+
+function returnSecondValue(getArray){
+   return getArray[1]
+}
+// console.log(returnSecondValue(myNewArray))
+console.log(returnSecondValue([300, 600, 900, 1000]))
 
 

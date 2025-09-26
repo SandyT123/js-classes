@@ -19,7 +19,10 @@ console.log("p");
 // addTwoNum(3,5); //8
 // addTwoNum(3,"5"); //35
 // addTwoNum(3,"a"); //3a
-// addTwoNum(3,null); //3
+// console.log(addTwoNum(3,null)) //3
+// console.log(addTwoNum(3,"")) //3
+// console.log(addTwoNum(3)) //NaN
+// console.log(addTwoNum(3,"san")) //3san
 
 function addTwoNum (number1 , number2) {
     // let result = number1 + number2;/
@@ -30,7 +33,7 @@ function addTwoNum (number1 , number2) {
 let result = addTwoNum(3,5);
 // console.log("Result" , result);
 
-function loginUser (userName = "sandy"){ // If nothing is paased then u can set the default value for that like this
+function loginUser (userName = "sandy"){ // If nothing is passed then u can set the default value for that like this
     if(!userName){  // "" and undefined = false and !userName is true here
        console.log("please enter a userName");
        return
@@ -40,7 +43,7 @@ function loginUser (userName = "sandy"){ // If nothing is paased then u can set 
 
 // console.log(loginUser("sandeep"));
 // console.log(loginUser(""));
-console.log(loginUser());
+// console.log(loginUser()); //if value doesnt exist then it will be undefined/
 console.log(loginUser("maga"));
  
 

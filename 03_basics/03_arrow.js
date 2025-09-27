@@ -61,3 +61,89 @@ console.log(addTwo(3, 4));
 // myArray.forEach(()=>{})
 // myArray.forEach(()=>())
 //looping and function formates
+
+//// AK - This concept
+// This keyward work diffrently for diffrent circumstances
+// for browser, nodejs, inside fn, global, arrow fn
+
+// "use strict"
+
+//This in global spaces
+console.log(this);
+// Inside browser ==> window object; Inside nodejs ==> global object
+// Inside nodejs global object is diffrent
+
+//This inside a function
+function x() {
+  //the value dependes on strict / non strict mode
+  console.log(this);
+}
+
+// for global this and inside function this is wont same
+// This keyward works diffrently in strict mode and non strict mode
+
+// This inside non strict mode
+// this keyward will be replaced with globalObject
+
+//This keyward value depends on how function is called
+x(); //undefine in SM
+window.x(); // window
+
+//This inside an object method
+
+//when you create a function as a part of an object is called method
+// const obj = {
+//   a: 10,
+//   x: function () {
+//     //x is method
+//     console.log(this.a); //10, here this represent this perticular obj
+//   },
+// };
+// obj.x();
+
+// please read about call, apply, and bind methods in js (sharing methods)
+
+//call method
+const student = {
+  name: "sandeep",
+  printName: function () {
+    console.log(this.name);
+  },
+};
+student.printName();
+
+const student2 = {
+  name: "akanksha",
+};
+
+student.printName.call(student2);
+//now it will overide and print akanksha from student one printName
+//value of this = student2
+
+//This keyward behaves in arrow function
+// Arrow function does not have own this method they take, value of enclosing lexical context
+
+const obj = {
+  a: 10,
+  x: function () {
+    console.log(this); // value of this is obj
+  },
+};
+obj.x();
+
+const obj2 = {
+  a: 10,
+  x: function () {
+    // const y = () => {
+    //   console.log(this);
+    // };
+    // y();
+    // Here own this is not their for arrow fn, value of enclosing lexical context
+    // Enclosing context is function here, function where it present that is the value
+  },
+};
+obj2.x();
+
+//This keyward inside the DOM elements => Refrence to html element
+
+/*<button onClick="alert(this.tagname)">click me</button>;*/

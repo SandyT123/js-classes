@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=
+    , initial-scale=1.0"
+    />
+    <title>Color Exchanger</title>
+    <style>
+      span {
+        background-color: yellow;
+        padding: 30px 40px;
+        border-radius: 8px;
+        color: #212121;
+        text-decoration: none;
+        border: 2px solid black;
+        padding: 20px;
+        cursor: pointer;
+      }
+      .canvas,
+      nav {
+        text-align: center;
+        padding: 20px;
+      }
+      h2 {
+        padding-top: 30px;
+      }
+      #grey {
+        background-color: grey;
+      }
+      #yellow {
+        background-color: yellow;
+      }
+      #white {
+        background-color: #fff;
+      }
+      #blue {
+        background-color: blue;
+      }
+      #purple {
+        background-color: purple;
+      }
+    </style>
+  </head>
+  <body style="background-color: rgb(223, 152, 152)">
+    <nav>
+      <a href="" title="Trigger to home">Home</a>
+      <a target="_blank" href="" title="Youtube">Youtube channel</a>
+    </nav>
+
+    <div class="canvas">
+      <h1>Color Scheme Switcher</h1>
+      <span class="button" id="grey">grey</span>
+      <span class="button" id="white">white</span>
+      <span class="button" id="blue">blue</span>
+      <span class="button" id="yellow">yellow</span>
+      <span class="button" id="purple">purple</span>
+
+      <h2>
+        Try click on one of the Color,
+        <small>To change the background color of the page</small>
+      </h2>
+    </div>
+    <script src="javascript.js"></script>
+  </body>
+</html>
